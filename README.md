@@ -73,6 +73,7 @@ script.
 
 # Coming Soon...
 
+- Uploading a modified configuration
 - Enabling telnet
 - Dumping the firmware
 - Full list of URLs
