@@ -23,5 +23,5 @@ if __name__ == '__main__':
     try:
         decrypt(sys.argv[1])
     except IndexError:
-        print "usage: %s <settings file>" % sys.argv[0]
+        print("usage: %s <settings file>" % sys.argv[0])
         sys.exit(2)
