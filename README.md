@@ -64,7 +64,9 @@ Download the
 [`decrypt-conf.py`](https://raw.githubusercontent.com/mattimustang/optus-sagemcom-fast-3864-hacks/master/decrypt-conf.py) script and you `backupsettings.conf` from your modem and put them in the same directory.
 
 
-Decrypt the settings:
+### Decrypt the Settings
+
+On Linux/Unix-like systems run:
 
     $ python decrypt-conf.py backupsettings.conf
 
@@ -82,7 +84,9 @@ command line:
 
     $ echo XXXXXXXXXXXX== | base64 -d
 
-To access the advanced menus enter the following URL with your routers password
+## Accessing the Advanced Settings
+
+To access the advanced menus enter the following URL with your router's `admin` password
 into your browser:
 
     http://admin:xxxxx@192.168.0.1/main.html
@@ -91,9 +95,18 @@ Credit goes to Matt Goring for his original [Windows configuration decryption
 tool](https://community.plus.net/t5/Tech-Help-Software-Hardware-etc/Unlocking-the-potential-of-Sagemcom-2704N/m-p/1223467#M64842) on which I based my python
 script.
 
+# Uploading a Modified Configuration
+
+Once you have obtained a plain text version of the configuration you can then
+modify it and upload it to the device.
+
+Open a web browser to `http://192.168.0.1` and navigate to Managment
+/ Configuration / Update and upload your modified the `backupsettings.conf.txt` file.
+
+There is no need to encrypt the file as the router will accept plain text files.
+
 # Coming Soon...
 
-- Uploading a modified configuration
 - Enabling telnet
 - Dumping the firmware
 - Full list of URLs
