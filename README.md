@@ -105,9 +105,31 @@ Open a web browser to `http://192.168.0.1` and navigate to Managment
 
 There is no need to encrypt the file as the router will accept plain text files.
 
+# Enabling Telnet
+
+Enabling telnet allows you to explore the device a little more and customize it
+further from the Linux command line.
+
+To enable telnet you need to modify a plain text copy of the configuration to
+include the line:
+
+    <X_GVT_Telnet_Enable>TRUE</X_GVT_Telnet_Enable>
+
+The configuration may already contain the line above but it is set to `FALSE` so
+just change it to `TRUE`.
+
+If it is missing the line then add it after the following line:
+
+    <InternetGatewayDevice>
+
+Then upload the modified configuration.
+
+You will now be able to telnet to `192.168.0.1` and login using the username
+`admin` and the password you obtained earlier. Once you are logged in you are
+put into a restricted shell so type `sh` to drop into a BusyBox Linux shell.
+
 # Coming Soon...
 
-- Enabling telnet
 - Dumping the firmware
 - Full list of URLs
 - PSI configuration decoder
@@ -119,3 +141,4 @@ on a similar device](https://community.plus.net/t5/Tech-Help-Software-Hardware-e
 -  [Help: Bundled modem Sagecom F@st 3864](http://forums.whirlpool.net.au/archive/2401743)
 - [Optus NBN - router admin access, using a BYO router with VOIP](http://forums.whirlpool.net.au/archive/2238007)
 - [Sagemcom F@ST 3864 V2 - Get Admin Password](https://www.exploit-db.com/exploits/37801/)
+- [Frank's Hacks](http://frankhacks.blogspot.com.au/2016/03/fst3864.html)
