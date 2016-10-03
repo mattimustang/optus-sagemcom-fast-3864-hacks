@@ -34,7 +34,7 @@ From firmware version `8.353.1_F@ST5350_Optus` access to the advanced settings
 was disabled, as was the ability to view the `admin` password in the Access
 Control page.
 
-However, thanks to some reverse engineering done by Matty123123 at the plus.net
+However, thanks to some reverse engineering done by `Matty123123` at the `plus.net`
 forums there is a way to decrypt the configuration file obtained when you
 download the backup settings from the router.
 
@@ -44,13 +44,33 @@ Open a web browser to `http://192.168.0.1` and navigate to Managment
 Next download a copy the the decrypt-conf.py script included in this
 repository.
 
+### Set up Linux
+
 Install the `decrypt-conf.py` dependencies:
 
     $ sudo pip install pycrypto
 
+### Set up Windows
+
+On Windows systems will need to download and install [python 3.5](https://www.python.org/downloads/). Make sure you check the box to add Python to your PATH in the installer.
+
+Then open a DOS or PowerShell command shell and install the pycrypto module:
+
+    pip install --use-wheel --no-index --find-links=https://github.com/sfbahr/PyCrypto-Wheels/raw/master/pycrypto-2.6.1-cp35-none-win32.whl pycrypto
+
+### Download `decrypt-conf.py`
+
+Download the 
+[`decrypt-conf.py`](https://raw.githubusercontent.com/mattimustang/optus-sagemcom-fast-3864-hacks/master/decrypt-conf.py) script and you `backupsettings.conf` from your modem and put them in the same directory.
+
+
 Decrypt the settings:
 
     $ python decrypt-conf.py backupsettings.conf
+
+or on Windwos:
+
+    > python.exe decrypt-conf.py backupsettings.conf
 
 This will produce a new file called `backupsettings.conf.txt`. Search this file
 for the lines:
