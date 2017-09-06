@@ -128,6 +128,10 @@ You will now be able to telnet to `192.168.0.1` and login using the username
 `admin` and the password you obtained earlier. Once you are logged in you are
 put into a restricted shell so type `sh` to drop into a BusyBox Linux shell.
 
+## Putting the device into bridge mode
+
+Follow the instructions in brigesagemcom3864.pdf. Original credit to [Ray Haverfield] (https://sites.google.com/site/lapastenague/)
+
 # Coming Soon...
 
 - Dumping the firmware
