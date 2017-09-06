@@ -130,7 +130,11 @@ put into a restricted shell so type `sh` to drop into a BusyBox Linux shell.
 
 # Putting the device into bridge mode
 
-Follow the instructions in brigesagemcom3864.pdf. Original credit to [Ray Haverfield](https://sites.google.com/site/lapastenague)
+Follow the instructions in the PDF to [put Optus F@st 3864 modem into bridge mode](brigesagemcom3864.pdf). Original credit to [Ray Haverfield](https://sites.google.com/site/lapastenague).
+
+Note:
+- Use the instructions above to obtain your admin password rather than those in the PDF.
+- The configuration instructions are for ADSL2 connections, not NBN VDSL connetions, and will need to be updated when I get NBN in about a month. I suspect the difference will be instead of removing interface `ppp2. Internet-ADSL` you will need to remove the interface `ppp1.1 Internet-NBN`.
 
 # Coming Soon...
 
