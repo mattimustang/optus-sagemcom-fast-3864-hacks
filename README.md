@@ -130,11 +130,35 @@ put into a restricted shell so type `sh` to drop into a BusyBox Linux shell.
 
 # Putting the device into bridge mode
 
+## ADSL2 Connections
+
 Follow the instructions in the PDF to [put Optus F@st 3864 modem into bridge mode](brigesagemcom3864.pdf). Original credit to [Ray Haverfield](https://sites.google.com/site/lapastenague).
 
 Note:
 - Use the instructions above to obtain your admin password rather than those in the PDF.
-- The configuration instructions are for ADSL2 connections, not NBN VDSL connetions, and will need to be updated when I get NBN in about a month. I suspect the difference will be instead of removing interface `ppp2. Internet-ADSL` you will need to remove the interface `ppp1.1 Internet-NBN`.
+
+## NBN FTTN/VDSL Connections
+
+The NDN FTTN/VDSL steps are similar to ADSL:
+
+1. Backup your existing configuration in case you want to revert to it later.
+2. Factory reset the modem by hold a paper clip in the reset hole at the back of the modem until all the lights flash and it reboots.
+3. Use the instructions above to obtain your admin password.
+4. Open a web browser to [http://192.168.0.1/main.html](http://192.168.0.1/main.html) and login as admin with the password obtained in the previous step.
+5. Navigate to `Advanced Setup / WAN Service`. Look for the row in the table with interface `ptm0.1` and description `ipoe_0_1_1.0`. Select the `Remove` checkbox for that row only and click the `Remove` button. This will remove the non-bridged NBN FTTN VDSL WAN interface.
+7. Navigate to `Advanced Setup / WAN Service` and click the `Add` button. This will start a wizard-like set of forms for configuring the WAN Service Interface.
+8. On the first page select a layer 2 interface for the service. Select `ptm0/(0_1_1)` and click `Next`.
+9. On the next page select the WAN service type `Bridging`. Do not change any other settings. Click `Next`.
+10. On the next page is a summary of the settings. Click `Apply/Save`.
+11. Next you will need to disable DHCP on the modem so that the alternative routing device you are bridging can get a public IP via DHCP. Navigate to `Advanced Setup / LAN` and select `Disable DHCP Server` and click `Apply/Save`.
+12. Next you should disable wireless. Navigate to `Wireless` and uncheck the `Enable Wireless` box. Click `Apply/Save`.
+13. Then reboot the modem by clicking the reboot button in the status widget at the top right.
+
+Once the modem has rebooted and the VDSL connection is established you can connect your other router's ethernet WAN interface into the Optus modem. Configure your other router to use DHCP on the WAN interface and it should get an IP address handed out to it from upstream server at Optus. If you get a 192.168.0.x IP address then you haven't disabled DHCP on the Optus F@st 3864 modem and you'll need to connect a PC to it again to do that.
+
+Note: Once you have disabled DHCP on the F@st 3864, if you ever need to make changes to it you will need to connect a computer to it with an ethernet cable and manually configure and IP address on your computer. Use 192.168.0.2 or higher. Then you will be able to browse to http://192.168.0.1 to make changes.
+
+Note: You can test if bridging is working by plugging a computer using an ethernet cable and having DHCP configured. However, **I strongly discourage doing this unless you know what you are doing and are sure that your computer's operating system is 100% up to date with all operating system security patches. Your computer will not have time to check for patches and update before you will be scanned and hacked within minutes. You have been warned!**
 
 # Coming Soon...
 
