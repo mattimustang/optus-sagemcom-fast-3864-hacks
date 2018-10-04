@@ -1,0 +1,1527 @@
+<?xml version="1.0"?>
+<DslCpeConfig version="3.0">
+  <InternetGatewayDevice>
+    <LANDeviceNumberOfEntries>1</LANDeviceNumberOfEntries>
+    <WANDeviceNumberOfEntries>1</WANDeviceNumberOfEntries>
+    <X_GVT_Telnet_Enable>TRUE</X_GVT_Telnet_Enable>
+    <X_GVT_GRE_Hotspot_Maximum_Clients>5</X_GVT_GRE_Hotspot_Maximum_Clients>
+    <DeviceInfo>
+      <ManufacturerOUI>1890D8</ManufacturerOUI>
+      <FirstUseDate>0001-01-01T00:00:00Z</FirstUseDate>
+      <VendorConfigFileNumberOfEntries>0</VendorConfigFileNumberOfEntries>
+    </DeviceInfo>
+    <X_BROADCOM_COM_LoginCfg>
+      <AdminPassword>OFBUdTVXQEMA</AdminPassword>
+      <SupportPassword>YWJjZAA=</SupportPassword>
+      <UserUserName>optus</UserUserName>
+      <UserPassword>b3B0dXMA</UserPassword>
+    </X_BROADCOM_COM_LoginCfg>
+    <X_BROADCOM_COM_AppCfg>
+      <DnsProxyCfg>
+        <DeviceDomainName>home</DeviceDomainName>
+        <DeviceHostName>mygateway</DeviceHostName>
+      </DnsProxyCfg>
+    </X_BROADCOM_COM_AppCfg>
+    <X_BROADCOM_COM_EthernetSwitch>
+      <NumberOfVirtualPorts>6</NumberOfVirtualPorts>
+      <EnableVirtualPorts>TRUE</EnableVirtualPorts>
+      <IfName>(null)</IfName>
+    </X_BROADCOM_COM_EthernetSwitch>
+    <ManagementServer>
+      <URL>http://acs-fast3864optac.optusnet.com.au:1111/</URL>
+      <Username>optus</Username>
+      <Password>optus</Password>
+      <PeriodicInformEnable>TRUE</PeriodicInformEnable>
+      <PeriodicInformInterval>86400</PeriodicInformInterval>
+      <PeriodicInformTime>1970-01-01T00:00:46+00:00</PeriodicInformTime>
+      <ConnectionRequestURL notification="2">(null)</ConnectionRequestURL>
+      <ConnectionRequestUsername>optus</ConnectionRequestUsername>
+      <ConnectionRequestPassword>optus</ConnectionRequestPassword>
+    </ManagementServer>
+    <Time>
+      <Enable>TRUE</Enable>
+      <NTPServer1>time01.syd.optusnet.com.au</NTPServer1>
+      <NTPServer2>time01.mel.optusnet.com.au</NTPServer2>
+      <NTPServer3>time02.mel.optusnet.com.au</NTPServer3>
+      <NTPServer4>au.pool.ntp.org</NTPServer4>
+      <NTPServer5>time.nist.gov</NTPServer5>
+      <LocalTimeZone>10:00</LocalTimeZone>
+      <LocalTimeZoneName>Canberra,&#32;Melbourne,&#32;Sydney</LocalTimeZoneName>
+      <DaylightSavingsStart>1970-01-01T00:04:36+00:00</DaylightSavingsStart>
+      <DaylightSavingsEnd>1970-01-01T00:04:36+00:00</DaylightSavingsEnd>
+    </Time>
+    <Layer2Bridging>
+      <BridgeNumberOfEntries>1</BridgeNumberOfEntries>
+      <FilterNumberOfEntries>18</FilterNumberOfEntries>
+      <MarkingNumberOfEntries>0</MarkingNumberOfEntries>
+      <AvailableInterfaceNumberOfEntries>17</AvailableInterfaceNumberOfEntries>
+      <Bridge instance="1">
+        <BridgeKey>0</BridgeKey>
+        <BridgeEnable>TRUE</BridgeEnable>
+        <BridgeName>Default</BridgeName>
+      </Bridge>
+      <Bridge nextInstance="2" ></Bridge>
+      <Filter instance="1">
+        <FilterKey>1</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>1</FilterInterface>
+      </Filter>
+      <Filter instance="2">
+        <FilterKey>2</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>2</FilterInterface>
+      </Filter>
+      <Filter instance="3">
+        <FilterKey>3</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>3</FilterInterface>
+      </Filter>
+      <Filter instance="4">
+        <FilterKey>4</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>4</FilterInterface>
+      </Filter>
+      <Filter instance="6">
+        <FilterKey>6</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>6</FilterInterface>
+      </Filter>
+      <Filter instance="7">
+        <FilterKey>7</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>7</FilterInterface>
+      </Filter>
+      <Filter instance="8">
+        <FilterKey>8</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>8</FilterInterface>
+      </Filter>
+      <Filter instance="9">
+        <FilterKey>9</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>9</FilterInterface>
+      </Filter>
+      <Filter instance="10">
+        <FilterKey>10</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>10</FilterInterface>
+      </Filter>
+      <Filter instance="11">
+        <FilterKey>11</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>11</FilterInterface>
+      </Filter>
+      <Filter instance="12">
+        <FilterKey>12</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>12</FilterInterface>
+      </Filter>
+      <Filter instance="13">
+        <FilterKey>13</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterInterface>13</FilterInterface>
+      </Filter>
+      <Filter instance="14">
+        <FilterKey>14</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>14</FilterInterface>
+      </Filter>
+      <Filter instance="15">
+        <FilterKey>15</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>15</FilterInterface>
+      </Filter>
+      <Filter instance="16">
+        <FilterKey>16</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>16</FilterInterface>
+      </Filter>
+      <Filter instance="17">
+        <FilterKey>17</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>17</FilterInterface>
+      </Filter>
+      <Filter instance="18">
+        <FilterKey>18</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>18</FilterInterface>
+      </Filter>
+      <Filter instance="19">
+        <FilterKey>19</FilterKey>
+        <FilterEnable>TRUE</FilterEnable>
+        <FilterBridgeReference>0</FilterBridgeReference>
+        <FilterInterface>19</FilterInterface>
+      </Filter>
+      <Filter nextInstance="20" ></Filter>
+      <AvailableInterface instance="1">
+        <AvailableInterfaceKey>1</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="2">
+        <AvailableInterfaceKey>2</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="3">
+        <AvailableInterfaceKey>3</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.3</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="4">
+        <AvailableInterfaceKey>4</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.4</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="6">
+        <AvailableInterfaceKey>6</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="7">
+        <AvailableInterfaceKey>7</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="8">
+        <AvailableInterfaceKey>8</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="9">
+        <AvailableInterfaceKey>9</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="10">
+        <AvailableInterfaceKey>10</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.2.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="11">
+        <AvailableInterfaceKey>11</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.2.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="12">
+        <AvailableInterfaceKey>12</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.2.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="13">
+        <AvailableInterfaceKey>13</AvailableInterfaceKey>
+        <InterfaceType>LANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.LANDevice.1.WLANConfiguration.2.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="14">
+        <AvailableInterfaceKey>14</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.3.WANConnectionDevice.1.WANPPPConnection.2</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="15">
+        <AvailableInterfaceKey>15</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANPPPConnection.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="16">
+        <AvailableInterfaceKey>16</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.3.WANConnectionDevice.1.WANPPPConnection.3</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="17">
+        <AvailableInterfaceKey>17</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.3.WANConnectionDevice.1.WANIPConnection.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface instance="18">
+        <AvailableInterfaceKey>18</AvailableInterfaceKey>
+        <InterfaceType>WANInterface</InterfaceType>
+        <InterfaceReference>InternetGatewayDevice.WANDevice.2.WANConnectionDevice.1.WANIPConnection.1</InterfaceReference>
+      </AvailableInterface>
+      <AvailableInterface nextInstance="19" ></AvailableInterface>
+    </Layer2Bridging>
+    <QueueManagement>
+      <Enable>TRUE</Enable>
+      <ClassificationNumberOfEntries>2</ClassificationNumberOfEntries>
+      <AppNumberOfEntries>0</AppNumberOfEntries>
+      <FlowNumberOfEntries>0</FlowNumberOfEntries>
+      <PolicerNumberOfEntries>0</PolicerNumberOfEntries>
+      <QueueNumberOfEntries>5</QueueNumberOfEntries>
+      <DefaultQueue>4294967295</DefaultQueue>
+      <DefaultDSCPMark>-2</DefaultDSCPMark>
+      <Classification instance="2">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>1</ClassificationOrder>
+        <ClassInterface>Local</ClassInterface>
+        <Ethertype>2048</Ethertype>
+        <DSCPCheck>184</DSCPCheck>
+        <ClassQueue>37</ClassQueue>
+        <X_BROADCOM_COM_ClassName>voice</X_BROADCOM_COM_ClassName>
+        <X_BROADCOM_COM_egressInterface>eth4.3</X_BROADCOM_COM_egressInterface>
+        <X_BROADCOM_COM_ClassKey>1</X_BROADCOM_COM_ClassKey>
+      </Classification>
+      <Classification instance="3">
+        <ClassificationEnable>TRUE</ClassificationEnable>
+        <ClassificationOrder>2</ClassificationOrder>
+        <ClassInterface>Local</ClassInterface>
+        <Ethertype>2048</Ethertype>
+        <DSCPCheck>184</DSCPCheck>
+        <DSCPMark>184</DSCPMark>
+        <ClassQueue>39</ClassQueue>
+        <X_BROADCOM_COM_ClassName>voice_ptm</X_BROADCOM_COM_ClassName>
+        <X_BROADCOM_COM_egressInterface>ptm0.1</X_BROADCOM_COM_egressInterface>
+        <X_BROADCOM_COM_ClassKey>2</X_BROADCOM_COM_ClassKey>
+      </Classification>
+      <Classification nextInstance="4" ></Classification>
+      <Queue instance="1">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Voice&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>1</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="2">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Voice&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>2</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="3">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Video&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>3</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="4">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Video&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>4</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="5">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>5</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Best&#32;Effort</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>5</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="6">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>6</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Background</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>6</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="7">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>7</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Background</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>7</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="8">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1</QueueInterface>
+        <QueuePrecedence>8</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Best&#32;Effort</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>8</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="9">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Voice&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>1</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="10">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Voice&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>2</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="11">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Video&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>3</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="12">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Video&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>4</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="13">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>5</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Best&#32;Effort</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>5</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="14">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>6</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Background</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>6</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="15">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>7</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Background</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>7</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="16">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2</QueueInterface>
+        <QueuePrecedence>8</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Best&#32;Effort</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>8</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="17">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Voice&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>1</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="18">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Voice&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>2</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="19">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Video&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>3</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="20">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Video&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>4</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="21">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>5</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Best&#32;Effort</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>5</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="22">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>6</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Background</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>6</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="23">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>7</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Background</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>7</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="24">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3</QueueInterface>
+        <QueuePrecedence>8</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Best&#32;Effort</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>8</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="25">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Voice&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>1</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="26">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>2</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Voice&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>2</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="27">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>3</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Video&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>3</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="28">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>4</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Video&#32;Priority</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>4</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="29">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>5</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Best&#32;Effort</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>5</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="30">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>6</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Background</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>6</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="31">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>7</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Background</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>7</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="32">
+        <QueueInterface>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4</QueueInterface>
+        <QueuePrecedence>8</QueuePrecedence>
+        <X_BROADCOM_COM_QueueName>WMM&#32;Best&#32;Effort</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>8</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="35">
+        <QueueInterface>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANDSLLinkConfig</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <QueuePrecedence>8</QueuePrecedence>
+        <SchedulerAlgorithm>WRR</SchedulerAlgorithm>
+        <X_BROADCOM_COM_QueueName>Default&#32;Queue</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_DslLatency>0</X_BROADCOM_COM_DslLatency>
+        <X_BROADCOM_COM_QueueId>1</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="36">
+        <QueueInterface>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANDSLLinkConfig</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <SchedulerAlgorithm>WRR</SchedulerAlgorithm>
+        <ShapingBurstSize>3000</ShapingBurstSize>
+        <X_BROADCOM_COM_QueueName>Acs&#32;Management&#32;Queue</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_DslLatency>0</X_BROADCOM_COM_DslLatency>
+        <X_BROADCOM_COM_QueueId>2</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="37">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.WANDevice.3.WANEthernetInterfaceConfig</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <X_BROADCOM_COM_QueueName>voice</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_QueueId>8</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="38">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.WANDevice.2.WANConnectionDevice.1.WANPTMLinkConfig</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <QueuePrecedence>8</QueuePrecedence>
+        <SchedulerAlgorithm>WRR</SchedulerAlgorithm>
+        <X_BROADCOM_COM_QueueName>Default&#32;Queue</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_DslLatency>0</X_BROADCOM_COM_DslLatency>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+        <X_BROADCOM_COM_QueueId>1</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue instance="39">
+        <QueueEnable>TRUE</QueueEnable>
+        <QueueInterface>InternetGatewayDevice.WANDevice.2.WANConnectionDevice.1.WANPTMLinkConfig</QueueInterface>
+        <QueueWeight>1</QueueWeight>
+        <SchedulerAlgorithm>WRR</SchedulerAlgorithm>
+        <ShapingRate>320000</ShapingRate>
+        <ShapingBurstSize>10000</ShapingBurstSize>
+        <X_BROADCOM_COM_QueueName>voice_ptm</X_BROADCOM_COM_QueueName>
+        <X_BROADCOM_COM_DslLatency>0</X_BROADCOM_COM_DslLatency>
+        <X_BROADCOM_COM_PtmPriority>0</X_BROADCOM_COM_PtmPriority>
+        <X_BROADCOM_COM_QueueId>2</X_BROADCOM_COM_QueueId>
+      </Queue>
+      <Queue nextInstance="40" ></Queue>
+    </QueueManagement>
+    <LANDevice instance="1">
+      <LANEthernetInterfaceNumberOfEntries>4</LANEthernetInterfaceNumberOfEntries>
+      <LANUSBInterfaceNumberOfEntries>0</LANUSBInterfaceNumberOfEntries>
+      <LANWLANConfigurationNumberOfEntries>2</LANWLANConfigurationNumberOfEntries>
+      <X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>0</X_BROADCOM_COM_LANMocaInterfaceNumberOfEntries>
+      <LANHostConfigManagement>
+        <DHCPServerEnable>TRUE</DHCPServerEnable>
+        <MinAddress>192.168.0.2</MinAddress>
+        <MaxAddress>192.168.0.254</MaxAddress>
+        <IPInterfaceNumberOfEntries>1</IPInterfaceNumberOfEntries>
+        <IPInterface instance="1">
+          <Enable>TRUE</Enable>
+          <IPInterfaceIPAddress>192.168.0.1</IPInterfaceIPAddress>
+          <X_BROADCOM_COM_IfName>br0</X_BROADCOM_COM_IfName>
+        </IPInterface>
+        <IPInterface nextInstance="2" ></IPInterface>
+      </LANHostConfigManagement>
+      <X_BROADCOM_COM_IPv6LANHostConfigManagement>
+        <IPv6InterfaceNumberOfEntries>0</IPv6InterfaceNumberOfEntries>
+      </X_BROADCOM_COM_IPv6LANHostConfigManagement>
+      <LANEthernetInterfaceConfig instance="1">
+        <Enable>TRUE</Enable>
+        <DuplexMode>Half</DuplexMode>
+        <X_BROADCOM_COM_IfName>eth0</X_BROADCOM_COM_IfName>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="2">
+        <Enable>TRUE</Enable>
+        <DuplexMode>Half</DuplexMode>
+        <X_BROADCOM_COM_IfName>eth1</X_BROADCOM_COM_IfName>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="3">
+        <Enable>TRUE</Enable>
+        <DuplexMode>Half</DuplexMode>
+        <X_BROADCOM_COM_IfName>eth2</X_BROADCOM_COM_IfName>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig instance="4">
+        <Enable>TRUE</Enable>
+        <DuplexMode>Full</DuplexMode>
+        <X_BROADCOM_COM_IfName>eth3</X_BROADCOM_COM_IfName>
+      </LANEthernetInterfaceConfig>
+      <LANEthernetInterfaceConfig nextInstance="6" ></LANEthernetInterfaceConfig>
+      <WLANConfiguration instance="1">
+        <MaxBitRate>144</MaxBitRate>
+        <SSID>OPTUS_7DAC88</SSID>
+        <BeaconType>11i</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <KeyPassphrase>NOS</KeyPassphrase>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>AESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>AESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <OperationalDataTransmitRates>NOS</OperationalDataTransmitRates>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>AU</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <X_BROADCOM_COM_HideSSID>FALSE</X_BROADCOM_COM_HideSSID>
+        <X_BROADCOM_COM_GuestSSID>wl0_Guest1</X_BROADCOM_COM_GuestSSID>
+        <X_BROADCOM_COM_GuestEnable>FALSE</X_BROADCOM_COM_GuestEnable>
+        <X_BROADCOM_COM_GuestHiden>FALSE</X_BROADCOM_COM_GuestHiden>
+        <X_BROADCOM_COM_GuestIsolateClients>FALSE</X_BROADCOM_COM_GuestIsolateClients>
+        <X_BROADCOM_COM_Guest1SSID>wl0_Guest2</X_BROADCOM_COM_Guest1SSID>
+        <X_BROADCOM_COM_Guest1Enable>FALSE</X_BROADCOM_COM_Guest1Enable>
+        <X_BROADCOM_COM_Guest1Hiden>FALSE</X_BROADCOM_COM_Guest1Hiden>
+        <X_BROADCOM_COM_Guest1IsolateClients>FALSE</X_BROADCOM_COM_Guest1IsolateClients>
+        <X_BROADCOM_COM_Guest2SSID>wl0_Guest3</X_BROADCOM_COM_Guest2SSID>
+        <X_BROADCOM_COM_Guest2Enable>FALSE</X_BROADCOM_COM_Guest2Enable>
+        <X_BROADCOM_COM_Guest2Hiden>FALSE</X_BROADCOM_COM_Guest2Hiden>
+        <X_BROADCOM_COM_Guest2IsolateClients>FALSE</X_BROADCOM_COM_Guest2IsolateClients>
+        <AssociatedDevice nextInstance="13" ></AssociatedDevice>
+        <WEPKey instance="1">
+          <WEPKey>1234567890123</WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>1234567890123</WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>1234567890123</WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>1234567890123</WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <KeyPassphrase>graftdimer17828</KeyPassphrase>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+        <X_BROADCOM_COM_WlanAdapter>
+          <WlBaseCfg>
+            <WlCountry>AU/0</WlCountry>
+            <WlPhyType>n</WlPhyType>
+            <WlCoreRev>22</WlCoreRev>
+            <WlMBands>3</WlMBands>
+            <WlVer>6.37.14.4803.cpe4.14L04.0-kdb</WlVer>
+            <WlAburnSupported>1</WlAburnSupported>
+            <WlAmpduSupported>1</WlAmpduSupported>
+            <WlWmeSupported>1</WlWmeSupported>
+            <WlWmfSupported>1</WlWmfSupported>
+            <WlRxChainPwrSaveEnable>1</WlRxChainPwrSaveEnable>
+          </WlBaseCfg>
+          <WlStaticWdsCfg instance="1">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="2">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="3">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="4">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg nextInstance="5" ></WlStaticWdsCfg>
+          <WlVirtIntfCfg instance="1">
+            <WlIdx>0</WlIdx>
+            <WlSsid>OPTUS_7DAC88</WlSsid>
+            <WlBssMacAddr>00:15:56:88:88:89</WlBssMacAddr>
+            <WlWpaPsk>graftdimer17828</WlWpaPsk>
+            <WlWpa>aes</WlWpa>
+            <WlAuthMode>psk2</WlAuthMode>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+            <WlWpsCfg>
+              <Wsc_mode>enabled</Wsc_mode>
+            </WlWpsCfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="2">
+            <WlSsid>wl0_Guest1</WlSsid>
+            <WlIfcname>wl0.1</WlIfcname>
+            <WlBssMacAddr>52:15:56:88:88:8a</WlBssMacAddr>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="3">
+            <WlIdx>2</WlIdx>
+            <WlSsid>wl0_Guest2</WlSsid>
+            <WlIfcname>wl0.2</WlIfcname>
+            <WlBssMacAddr>52:15:56:88:88:8b</WlBssMacAddr>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="4">
+            <WlIdx>3</WlIdx>
+            <WlSsid>wl0_Guest3</WlSsid>
+            <WlIfcname>wl0.3</WlIfcname>
+            <WlBssMacAddr>52:15:56:88:88:88</WlBssMacAddr>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg nextInstance="5" ></WlVirtIntfCfg>
+        </X_BROADCOM_COM_WlanAdapter>
+      </WLANConfiguration>
+      <WLANConfiguration instance="2">
+        <MaxBitRate>300</MaxBitRate>
+        <SSID>OPTUS_7DAC88_5GHz</SSID>
+        <BeaconType>11i</BeaconType>
+        <WEPKeyIndex>1</WEPKeyIndex>
+        <KeyPassphrase>NOS</KeyPassphrase>
+        <BasicEncryptionModes>None</BasicEncryptionModes>
+        <BasicAuthenticationMode>None</BasicAuthenticationMode>
+        <WPAEncryptionModes>AESEncryption</WPAEncryptionModes>
+        <WPAAuthenticationMode>PSKAuthentication</WPAAuthenticationMode>
+        <IEEE11iEncryptionModes>AESEncryption</IEEE11iEncryptionModes>
+        <IEEE11iAuthenticationMode>PSKAuthentication</IEEE11iAuthenticationMode>
+        <BasicDataTransmitRates>54</BasicDataTransmitRates>
+        <OperationalDataTransmitRates>NOS</OperationalDataTransmitRates>
+        <RadioEnabled>TRUE</RadioEnabled>
+        <LocationDescription>NOS</LocationDescription>
+        <RegulatoryDomain>AU</RegulatoryDomain>
+        <PeerBSSID>NOS</PeerBSSID>
+        <AuthenticationServiceMode>NOS</AuthenticationServiceMode>
+        <X_BROADCOM_COM_HideSSID>FALSE</X_BROADCOM_COM_HideSSID>
+        <X_BROADCOM_COM_GuestSSID>wl1_Guest1</X_BROADCOM_COM_GuestSSID>
+        <X_BROADCOM_COM_GuestEnable>FALSE</X_BROADCOM_COM_GuestEnable>
+        <X_BROADCOM_COM_GuestHiden>FALSE</X_BROADCOM_COM_GuestHiden>
+        <X_BROADCOM_COM_GuestIsolateClients>FALSE</X_BROADCOM_COM_GuestIsolateClients>
+        <X_BROADCOM_COM_Guest1SSID>wl1_Guest2</X_BROADCOM_COM_Guest1SSID>
+        <X_BROADCOM_COM_Guest1Enable>FALSE</X_BROADCOM_COM_Guest1Enable>
+        <X_BROADCOM_COM_Guest1Hiden>FALSE</X_BROADCOM_COM_Guest1Hiden>
+        <X_BROADCOM_COM_Guest1IsolateClients>FALSE</X_BROADCOM_COM_Guest1IsolateClients>
+        <X_BROADCOM_COM_Guest2SSID>wl1_Guest3</X_BROADCOM_COM_Guest2SSID>
+        <X_BROADCOM_COM_Guest2Enable>FALSE</X_BROADCOM_COM_Guest2Enable>
+        <X_BROADCOM_COM_Guest2Hiden>FALSE</X_BROADCOM_COM_Guest2Hiden>
+        <X_BROADCOM_COM_Guest2IsolateClients>FALSE</X_BROADCOM_COM_Guest2IsolateClients>
+        <WEPKey instance="1">
+          <WEPKey>1234567890123</WEPKey>
+        </WEPKey>
+        <WEPKey instance="2">
+          <WEPKey>1234567890123</WEPKey>
+        </WEPKey>
+        <WEPKey instance="3">
+          <WEPKey>1234567890123</WEPKey>
+        </WEPKey>
+        <WEPKey instance="4">
+          <WEPKey>1234567890123</WEPKey>
+        </WEPKey>
+        <WEPKey nextInstance="5" ></WEPKey>
+        <PreSharedKey instance="1">
+          <KeyPassphrase>graftdimer17828</KeyPassphrase>
+        </PreSharedKey>
+        <PreSharedKey nextInstance="2" ></PreSharedKey>
+        <X_BROADCOM_COM_WlanAdapter>
+          <WlBaseCfg>
+            <WlCountry>AU/0</WlCountry>
+            <WlPhyType>v</WlPhyType>
+            <WlCoreRev>42</WlCoreRev>
+            <WlBand>1</WlBand>
+            <WlMBands>1</WlMBands>
+            <WlVer>6.37.14.4803.cpe4.14L04.0-kdb</WlVer>
+            <WlAburnSupported>1</WlAburnSupported>
+            <WlAmpduSupported>1</WlAmpduSupported>
+            <WlWmeSupported>1</WlWmeSupported>
+            <WlWmfSupported>1</WlWmfSupported>
+            <WlRxChainPwrSaveEnable>1</WlRxChainPwrSaveEnable>
+            <WlTXBFCapable>1</WlTXBFCapable>
+            <WlEnableBFR>0</WlEnableBFR>
+            <WlEnableBFE>0</WlEnableBFE>
+          </WlBaseCfg>
+          <WlStaticWdsCfg instance="1">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="2">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="3">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg instance="4">
+          </WlStaticWdsCfg>
+          <WlStaticWdsCfg nextInstance="5" ></WlStaticWdsCfg>
+          <WlMimoCfg>
+            <WlNBwCap>3</WlNBwCap>
+            <WlNBand>1</WlNBand>
+          </WlMimoCfg>
+          <WlVirtIntfCfg instance="1">
+            <WlIdx>0</WlIdx>
+            <WlSsid>OPTUS_7DAC88_5GHz</WlSsid>
+            <WlIfcname>wl1</WlIfcname>
+            <WlBssMacAddr>00:15:56:88:88:8A</WlBssMacAddr>
+            <WlWpaPsk>graftdimer17828</WlWpaPsk>
+            <WlWpa>aes</WlWpa>
+            <WlAuthMode>psk2</WlAuthMode>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+            <WlWpsCfg>
+              <Wsc_mode>enabled</Wsc_mode>
+            </WlWpsCfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="2">
+            <WlSsid>wl1_Guest1</WlSsid>
+            <WlIfcname>wl1.1</WlIfcname>
+            <WlBssMacAddr>5a:15:56:88:88:8b</WlBssMacAddr>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="3">
+            <WlIdx>2</WlIdx>
+            <WlSsid>wl1_Guest2</WlSsid>
+            <WlIfcname>wl1.2</WlIfcname>
+            <WlBssMacAddr>5a:15:56:88:88:88</WlBssMacAddr>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg instance="4">
+            <WlIdx>3</WlIdx>
+            <WlSsid>wl1_Guest3</WlSsid>
+            <WlIfcname>wl1.3</WlIfcname>
+            <WlBssMacAddr>5a:15:56:88:88:89</WlBssMacAddr>
+            <WlWpa>tkip+aes</WlWpa>
+            <WlEnblSsid>0</WlEnblSsid>
+            <WlKey64Cfg instance="1">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="2">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="3">
+            </WlKey64Cfg>
+            <WlKey64Cfg instance="4">
+            </WlKey64Cfg>
+            <WlKey64Cfg nextInstance="5" ></WlKey64Cfg>
+            <WlKey128Cfg instance="1">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="2">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="3">
+            </WlKey128Cfg>
+            <WlKey128Cfg instance="4">
+            </WlKey128Cfg>
+            <WlKey128Cfg nextInstance="5" ></WlKey128Cfg>
+          </WlVirtIntfCfg>
+          <WlVirtIntfCfg nextInstance="5" ></WlVirtIntfCfg>
+        </X_BROADCOM_COM_WlanAdapter>
+      </WLANConfiguration>
+      <WLANConfiguration nextInstance="3" ></WLANConfiguration>
+    </LANDevice>
+    <LANDevice nextInstance="2" ></LANDevice>
+    <WANDevice instance="1">
+      <WANConnectionNumberOfEntries>1</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>DSL</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="1">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="2">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="3">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="4">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats nextInstance="5" ></X_BROADCOM_COM_XTM_Interface_Stats>
+      <WANDSLInterfaceConfig>
+        <Enable>TRUE</Enable>
+        <X_BROADCOM_COM_AdslModulationCfg>ADSL_G.dmt,&#32;ADSL_2plus,&#32;ADSL_G.dmt.bis,&#32;ADSL_re-adsl,&#32;VDSL2</X_BROADCOM_COM_AdslModulationCfg>
+        <X_BROADCOM_COM_SRA>On</X_BROADCOM_COM_SRA>
+        <X_BROADCOM_COM_VDSL_30a>FALSE</X_BROADCOM_COM_VDSL_30a>
+      </WANDSLInterfaceConfig>
+      <WANConnectionDevice instance="2">
+        <WANIPConnectionNumberOfEntries>0</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>1</WANPPPConnectionNumberOfEntries>
+        <WANDSLLinkConfig>
+          <Enable>TRUE</Enable>
+          <LinkType>EoA</LinkType>
+          <DestinationAddress>PVC:&#32;8/35</DestinationAddress>
+          <X_BROADCOM_COM_ATMEnbQos>TRUE</X_BROADCOM_COM_ATMEnbQos>
+          <X_BROADCOM_COM_GrpPrecedence>8</X_BROADCOM_COM_GrpPrecedence>
+          <X_BROADCOM_COM_QueuePrecedence>8</X_BROADCOM_COM_QueuePrecedence>
+          <X_BROADCOM_COM_ConnectionMode>VlanMuxMode</X_BROADCOM_COM_ConnectionMode>
+          <X_BROADCOM_COM_IfName>atm0</X_BROADCOM_COM_IfName>
+        </WANDSLLinkConfig>
+        <WANPPPConnection instance="1">
+          <Enable>TRUE</Enable>
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>Internet-ADSL</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <X_BROADCOM_COM_FirewallEnabled>TRUE</X_BROADCOM_COM_FirewallEnabled>
+          <Username>john_citizen@optusnet.com.au</Username>
+          <X_BROADCOM_COM_ConnectionId>1</X_BROADCOM_COM_ConnectionId>
+          <X_BROADCOM_COM_IfName>ppp2.1</X_BROADCOM_COM_IfName>
+          <ExternalIPAddress notification="2">(null)</ExternalIPAddress>
+          <DNSEnabled>TRUE</DNSEnabled>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+          <X_SAGEM_COM_ppp_mtu>1492</X_SAGEM_COM_ppp_mtu>
+        </WANPPPConnection>
+        <WANPPPConnection nextInstance="2" ></WANPPPConnection>
+      </WANConnectionDevice>
+      <WANConnectionDevice nextInstance="3" ></WANConnectionDevice>
+    </WANDevice>
+    <WANDevice instance="2">
+      <WANConnectionNumberOfEntries>1</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>DSL</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="1">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="2">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="3">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats instance="4">
+      </X_BROADCOM_COM_XTM_Interface_Stats>
+      <X_BROADCOM_COM_XTM_Interface_Stats nextInstance="5" ></X_BROADCOM_COM_XTM_Interface_Stats>
+      <WANDSLInterfaceConfig>
+        <Enable>TRUE</Enable>
+        <LinkEncapsulationUsed>G.992.3_Annex_K_PTM</LinkEncapsulationUsed>
+      </WANDSLInterfaceConfig>
+      <WANConnectionDevice instance="1">
+        <WANIPConnectionNumberOfEntries>1</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>0</WANPPPConnectionNumberOfEntries>
+        <WANPTMLinkConfig>
+          <Enable>TRUE</Enable>
+          <X_BROADCOM_COM_PTMPriorityHigh>TRUE</X_BROADCOM_COM_PTMPriorityHigh>
+          <X_BROADCOM_COM_PTMEnbQos>TRUE</X_BROADCOM_COM_PTMEnbQos>
+          <X_BROADCOM_COM_GrpPrecedence>8</X_BROADCOM_COM_GrpPrecedence>
+          <X_BROADCOM_COM_QueuePrecedence>8</X_BROADCOM_COM_QueuePrecedence>
+          <X_BROADCOM_COM_ConnectionMode>VlanMuxMode</X_BROADCOM_COM_ConnectionMode>
+          <X_BROADCOM_COM_IfName>ptm0</X_BROADCOM_COM_IfName>
+          <X_BROADCOM_COM_QueueShapingBurstSize>3000</X_BROADCOM_COM_QueueShapingBurstSize>
+        </WANPTMLinkConfig>
+        <WANIPConnection instance="1">
+          <Enable>TRUE</Enable>
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>ipoe_0_1_1.0</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <ExternalIPAddress notification="2">0.0.0.0</ExternalIPAddress>
+          <X_BROADCOM_COM_FirewallEnabled>TRUE</X_BROADCOM_COM_FirewallEnabled>
+          <DNSEnabled>TRUE</DNSEnabled>
+          <X_BROADCOM_COM_IfName>ptm0.1</X_BROADCOM_COM_IfName>
+          <X_BROADCOM_COM_ConnectionId>1</X_BROADCOM_COM_ConnectionId>
+          <X_BROADCOM_COM_VlanTpid>0</X_BROADCOM_COM_VlanTpid>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+        </WANIPConnection>
+        <WANIPConnection nextInstance="2" ></WANIPConnection>
+      </WANConnectionDevice>
+      <WANConnectionDevice nextInstance="2" ></WANConnectionDevice>
+    </WANDevice>
+    <WANDevice instance="3">
+      <WANConnectionNumberOfEntries>1</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>Ethernet</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <WANEthernetInterfaceConfig>
+        <Enable>TRUE</Enable>
+        <MaxBitRate>Auto</MaxBitRate>
+        <DuplexMode>Auto</DuplexMode>
+        <X_BROADCOM_COM_IfName>eth4</X_BROADCOM_COM_IfName>
+        <X_BROADCOM_COM_ConnectionMode>VlanMuxMode</X_BROADCOM_COM_ConnectionMode>
+        <X_BROADCOM_COM_IPv6Address instance="1">
+        </X_BROADCOM_COM_IPv6Address>
+        <X_BROADCOM_COM_IPv6Address nextInstance="2" ></X_BROADCOM_COM_IPv6Address>
+      </WANEthernetInterfaceConfig>
+      <WANConnectionDevice instance="1">
+        <WANIPConnectionNumberOfEntries>1</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>2</WANPPPConnectionNumberOfEntries>
+        <WANIPConnection instance="1">
+          <Enable>TRUE</Enable>
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>Internet-BNG</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <ExternalIPAddress notification="2">0.0.0.0</ExternalIPAddress>
+          <X_BROADCOM_COM_FirewallEnabled>TRUE</X_BROADCOM_COM_FirewallEnabled>
+          <DNSEnabled>TRUE</DNSEnabled>
+          <X_BROADCOM_COM_IfName>eth4.3</X_BROADCOM_COM_IfName>
+          <X_BROADCOM_COM_ConnectionId>3</X_BROADCOM_COM_ConnectionId>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+        </WANIPConnection>
+        <WANIPConnection nextInstance="2" ></WANIPConnection>
+        <WANPPPConnection instance="2">
+          <Enable>TRUE</Enable>
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>Internet-NBN</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <X_BROADCOM_COM_FirewallEnabled>TRUE</X_BROADCOM_COM_FirewallEnabled>
+          <Username>john_citizen@optusnet.com.au</Username>
+          <X_BROADCOM_COM_ConnectionId>1</X_BROADCOM_COM_ConnectionId>
+          <X_BROADCOM_COM_IfName>ppp1.1</X_BROADCOM_COM_IfName>
+          <ExternalIPAddress notification="2">(null)</ExternalIPAddress>
+          <DNSEnabled>TRUE</DNSEnabled>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+          <X_SAGEM_COM_ppp_mtu>1492</X_SAGEM_COM_ppp_mtu>
+        </WANPPPConnection>
+        <WANPPPConnection instance="3">
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>Voice-NBN</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <X_BROADCOM_COM_FirewallEnabled>TRUE</X_BROADCOM_COM_FirewallEnabled>
+          <Username>nbnvoip@optusnet.com.au</Username>
+          <X_BROADCOM_COM_ConnectionId>2</X_BROADCOM_COM_ConnectionId>
+          <X_BROADCOM_COM_IfName>ppp3.2</X_BROADCOM_COM_IfName>
+          <ExternalIPAddress notification="2">(null)</ExternalIPAddress>
+          <DNSEnabled>FALSE</DNSEnabled>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+          <X_SAGEM_COM_ppp_mtu>1492</X_SAGEM_COM_ppp_mtu>
+        </WANPPPConnection>
+        <WANPPPConnection nextInstance="4" ></WANPPPConnection>
+      </WANConnectionDevice>
+      <WANConnectionDevice nextInstance="2" ></WANConnectionDevice>
+    </WANDevice>
+    <WANDevice instance="4">
+      <WANConnectionNumberOfEntries>0</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>DSL</WANAccessType>
+      </WANCommonInterfaceConfig>
+    </WANDevice>
+    <WANDevice instance="8">
+      <WANConnectionNumberOfEntries>0</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>X_SAGEMCOM_COM_USB3G</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <WanUSB3GInterfaceConfig>
+        <X_BROADCOM_COM_IfName>ttyUSB</X_BROADCOM_COM_IfName>
+      </WanUSB3GInterfaceConfig>
+      <WANConnectionDevice instance="1">
+        <WANIPConnectionNumberOfEntries>0</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>0</WANPPPConnectionNumberOfEntries>
+        <WANPPPConnection instance="1">
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>3G</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <X_BROADCOM_COM_FirewallEnabled>TRUE</X_BROADCOM_COM_FirewallEnabled>
+          <X_BROADCOM_COM_ConnectionId>1</X_BROADCOM_COM_ConnectionId>
+          <X_BROADCOM_COM_IfName>ppp0</X_BROADCOM_COM_IfName>
+          <ExternalIPAddress notification="2">(null)</ExternalIPAddress>
+          <DNSEnabled>TRUE</DNSEnabled>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+        </WANPPPConnection>
+      </WANConnectionDevice>
+    </WANDevice>
+    <WANDevice instance="9">
+      <WANConnectionNumberOfEntries>0</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>X_SAGEMCOM_COM_USB4G</WANAccessType>
+      </WANCommonInterfaceConfig>
+      <WANUSB4GInterfaceConfig>
+        <Enable>TRUE</Enable>
+        <Status>NoLink</Status>
+        <X_BROADCOM_COM_IfName>usb0</X_BROADCOM_COM_IfName>
+      </WANUSB4GInterfaceConfig>
+      <WANConnectionDevice instance="1">
+        <WANIPConnectionNumberOfEntries>0</WANIPConnectionNumberOfEntries>
+        <WANPPPConnectionNumberOfEntries>0</WANPPPConnectionNumberOfEntries>
+        <WANIPConnection instance="1">
+          <Enable>TRUE</Enable>
+          <ConnectionType>IP_Routed</ConnectionType>
+          <Name>Mobile</Name>
+          <NATEnabled>TRUE</NATEnabled>
+          <ExternalIPAddress notification="2">0.0.0.0</ExternalIPAddress>
+          <X_BROADCOM_COM_FirewallEnabled>TRUE</X_BROADCOM_COM_FirewallEnabled>
+          <DNSEnabled>TRUE</DNSEnabled>
+          <X_BROADCOM_COM_IfName>usb0</X_BROADCOM_COM_IfName>
+          <X_BROADCOM_COM_ConnectionId>1</X_BROADCOM_COM_ConnectionId>
+          <PortMappingNumberOfEntries>0</PortMappingNumberOfEntries>
+        </WANIPConnection>
+      </WANConnectionDevice>
+    </WANDevice>
+    <WANDevice instance="100">
+      <WANConnectionNumberOfEntries>0</WANConnectionNumberOfEntries>
+      <WANCommonInterfaceConfig>
+        <WANAccessType>X_BROADCOM_COM_L2TPAC</WANAccessType>
+      </WANCommonInterfaceConfig>
+    </WANDevice>
+    <WANDevice nextInstance="5" ></WANDevice>
+    <Layer3Forwarding>
+      <ForwardNumberOfEntries>0</ForwardNumberOfEntries>
+      <X_BROADCOM_COM_DefaultConnectionServices>eth4.3,ppp1.1,ppp2.1,ptm0.1,usb0</X_BROADCOM_COM_DefaultConnectionServices>
+    </Layer3Forwarding>
+    <X_BROADCOM_COM_IPv6Layer3Forwarding>
+      <ForwardNumberOfEntries>0</ForwardNumberOfEntries>
+    </X_BROADCOM_COM_IPv6Layer3Forwarding>
+    <Services>
+      <StorageService instance="1">
+        <Enable>FALSE</Enable>
+      </StorageService>
+      <StorageService nextInstance="2" ></StorageService>
+      <VoiceService instance="1">
+        <VoiceProfileNumberOfEntries>4</VoiceProfileNumberOfEntries>
+        <X_BROADCOM_COM_BoundIfName>ppp3.2</X_BROADCOM_COM_BoundIfName>
+        <X_BROADCOM_COM_DectEepromData>0ffffffff825007f000000ffffffffffffffffffffffffffffffffffffffffff000418202801ffffff20002c00ffffffffffffffffffffffff010000030f80005f03800f40005303800a20004803802a10004603802a100043038044100041038022843000100000ffffffffffffffffffffffffffffffffffffffffffffffff00050dffffffffffffffffffffffffffffffffffffff000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00ffff000001000103ff00220020200811ffffffffffffffffff00f87fffffffffff50ff02010001000910ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff002020202020202020202020202020202020000000ffffff000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000100fcffffffffffffffffffffffffffffff8a001d000109010101000100010030000000000005000a0002ffff0000000000000050434d2031ffffffffff8a001d000309010202000100010030000000000005000a0002ffff0000000000000050434d2032ffffffffff8a001d000509010303000100010030000000000005000a0002ffff0000000000000050434d2033ffffffffff8a001d000709010404000100010030000000000005000a0002ffff0000000000000050434d2034ffffffffff89001900090801010000000000000000000030310000090002ffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</X_BROADCOM_COM_DectEepromData>
+        <MinHookFlash>60</MinHookFlash>
+        <MaxHookFlash>200</MaxHookFlash>
+        <Capabilities>
+          <Codecs instance="1">
+          </Codecs>
+          <Codecs instance="2">
+          </Codecs>
+          <Codecs instance="3">
+          </Codecs>
+          <Codecs instance="4">
+          </Codecs>
+          <Codecs instance="5">
+          </Codecs>
+          <Codecs instance="6">
+          </Codecs>
+          <Codecs instance="7">
+          </Codecs>
+          <Codecs instance="8">
+          </Codecs>
+          <Codecs instance="9">
+          </Codecs>
+          <Codecs instance="10">
+          </Codecs>
+          <Codecs instance="11">
+          </Codecs>
+          <Codecs instance="12">
+          </Codecs>
+          <Codecs instance="13">
+          </Codecs>
+          <Codecs instance="14">
+          </Codecs>
+          <Codecs instance="15">
+          </Codecs>
+          <Codecs instance="16">
+          </Codecs>
+          <Codecs instance="17">
+          </Codecs>
+          <Codecs instance="18">
+          </Codecs>
+          <Codecs instance="19">
+          </Codecs>
+          <Codecs nextInstance="20" ></Codecs>
+        </Capabilities>
+        <VoiceProfile instance="1">
+          <Enable>Enabled</Enable>
+          <MaxSessions>6</MaxSessions>
+          <DTMFMethod>RFC2833</DTMFMethod>
+          <Region>AU</Region>
+          <DigitMap>xx+#|x+T|[*#]xx|000|106|183[1-2]</DigitMap>
+          <X_BROADCOM_COM_LogServer>0.0.0.0</X_BROADCOM_COM_LogServer>
+          <X_BROADCOM_COM_CCTK_DigitMap>TIMER&#32;S=4&#13;&#10;TIMER&#32;Z=16&#13;&#10;&#13;&#10;sdelim&#32;=&#32;&quot;@&quot;&#13;&#10;edelim&#32;=&#32;&quot;:&quot;&#13;&#10;domain&#32;=&#32;&amp;extVarProxy&#13;&#10;port&#32;&#32;&#32;=&#32;&amp;extVarProxyPort&#13;&#10;&#13;&#10;localEmergencyNumber&#32;=&#32;&quot;000&quot;&#13;&#10;areaCode&#32;=&#32;&quot;604&quot;&#13;&#10;&#13;&#10;MAP&#32;MainTable&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(=RemoteVSCs)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;MAKE-CALL&#32;(&#32;&quot;sip:&quot;&#32;#1v&#32;=sdelim&#32;=domain&#32;=edelim&#32;=port&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=ImmediateVSCs)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#13;&#10;&#32;&#32;&#32;&quot;(=DelayedVSCs)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#13;&#10;&#32;&#32;&#32;&quot;(=Emergency)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;MAKE-CALL&#32;(&#32;&quot;sip:&quot;&#32;#0&#32;=sdelim&#32;=domain&#32;=edelim&#32;=port&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=NationalNumbers)&quot;&#32;&#32;&#32;&#32;:&#32;MAKE-CALL&#32;(&#32;&quot;sip:&quot;&#32;#1v&#32;=sdelim&#32;=domain&#32;=edelim&#32;=port&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=IntNumbers)&quot;&#32;:&#32;MAKE-INTERNAL-CALL&#32;(&#32;#0v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;x{1-29}*&quot;&#32;:&#32;REORDER&#13;&#10;&#32;&#32;&#32;&quot;x{1-29}#&quot;&#32;:&#32;REORDER&#13;&#10;&#32;&#32;&#32;&quot;x{30}&quot;&#32;&#32;&#32;&#32;:&#32;REORDER&#13;&#10;&#13;&#10;MAP&#32;RemoteVSCs&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(=Star)69&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*69&quot;&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)25&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*25&quot;&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)96&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*96&quot;&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)23(=CNumber)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*23&quot;&#32;#2v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)78(=CNumber)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*78&quot;&#32;#2v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)76(=CNumber)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*76&quot;&#32;#2v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)77(=CNumber)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*77&quot;&#32;#2v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#(79)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;&#37;23&quot;&#32;#1&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#(25)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;&#37;23&quot;&#32;#1&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#(87)(=BNumber)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;&#37;23&quot;&#32;#1&#32;#2v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;1832(=BNumber)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;#0&#32;)&#13;&#10;&#32;&#32;&#32;&quot;1831(=BNumber)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;#0&#32;)&#13;&#10;&#32;&#32;&#32;&quot;##&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;&#37;23&#37;23&quot;&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)95&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*95&quot;&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)98&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*98&quot;&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)99&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*99&quot;&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)97(=BNumber)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*97&quot;&#32;#2v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)94(=BNumber)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;*94&quot;&#32;#2v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#(97)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;&#37;23&quot;&#32;#1&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#(94)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;&#37;23&quot;&#32;#1&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#(78)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;&#37;23&quot;&#32;#1&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#(76)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;&#37;23&quot;&#32;#1&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#(77)&quot;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;RETURN&#32;(&#32;&quot;&#37;23&quot;&#32;#1&#32;)&#13;&#10;&#13;&#10;MAP&#32;ImmediateVSCs&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(=Star)6[01]&quot;&#32;:&#32;CW-TOGGLE;&#32;RECALL&#13;&#10;&#32;&#32;&#32;&quot;(=Star)71&quot;&#32;&#32;&#32;&#32;:&#32;CF-ACTIVATE;&#32;RECALL&#13;&#10;&#32;&#32;&#32;&quot;(=Star)75&quot;&#32;&#32;&#32;&#32;:&#32;CF-DEACTIVATE;&#32;RECALL&#13;&#10;&#32;&#32;&#32;&quot;(=Star)85([0-9]{4})0&quot;&#32;:&#32;CB-DEACTIVATE&#32;(#1)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)85([0-9]{4})1&quot;&#32;:&#32;CB-ACTIVATEALL&#32;(#1)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)85([0-9]{4})2&quot;&#32;:&#32;CB-ACTIVATEDM&#32;(#1)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)68&quot;&#32;&#32;&#32;&#32;:&#32;AC-ACTIVATE&#32;(#0)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)72&quot;&#32;&#32;&#32;&#32;:&#32;WARMLINE-ACTIVATE-VIA-DIIGITMAP&#32;(#0)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)79&quot;&#32;&#32;&#32;&#32;:&#32;WARMLINE-DEACTIVATE-VIA-DIGITMAP&#32;(#0)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)80&quot;&#32;&#32;&#32;&#32;:&#32;ACR-ACTIVATE&#32;(#0)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)81&quot;&#32;&#32;&#32;&#32;:&#32;ACR-DEACTIVATE&#32;(#0)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)86&quot;&#32;&#32;&#32;&#32;:&#32;DND-ACTIVATE&#32;(#0)&#13;&#10;&#32;&#32;&#32;&quot;(=Star)87&quot;&#32;&#32;&#32;&#32;:&#32;DND-DEACTIVATE&#32;(#0)&#13;&#10;&#13;&#10;MAP&#32;DelayedVSCs&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(=Star)82&quot;&#32;&#32;&#32;&#32;:&#32;CID-SUPPRESS;&#32;RECALL&#13;&#10;&#32;&#32;&#32;&quot;(=Star)90&quot;&#32;&#32;&#32;&#32;:&#32;CID-DELIVER;&#32;RECALL&#13;&#10;&#13;&#10;MAP&#32;Emergency&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(=localEmergencyNumber)&quot;&#32;:&#32;RETURN&#13;&#10;&#32;&#32;&#32;&quot;(106)&quot;&#32;:&#32;RETURN(&#32;#1&#32;)&#13;&#10;&#13;&#10;MAP&#32;PhoneNumbers&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(=CollectNumbers)&quot;&#32;:&#32;RETURN(&#32;#1v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;(=SurchargedNumbers)&quot;&#32;:&#32;RETURN(&#32;#1v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;1{0-1}(=NationalNumbers)&quot;&#32;:&#32;RETURN(&quot;+1&quot;&#32;#1v&#32;)&#13;&#10;&#32;&#32;&#32;&quot;011([2-9]x{1-14})&#32;(=End)&quot;&#32;:&#32;RETURN(&#32;&quot;+&quot;&#32;#1&#32;)&#13;&#10;&#32;&#32;&#32;&quot;01([2-9]x{1-14})&#32;(=End)&quot;&#32;:&#32;RETURN(&#32;&quot;01&quot;&#32;#1&#32;)&#13;&#10;&#13;&#10;MAP&#32;CollectNumbers&#32;=&#13;&#10;&#32;&#32;&#32;&quot;1{0-1}&#32;(800[2-9]x{6})&quot;&#32;:&#32;RETURN(&#32;&quot;+1&quot;&#32;#1&#32;)&#13;&#10;&#32;&#32;&#32;&quot;1{0-1}&#32;(866[2-9]x{6})&quot;&#32;:&#32;RETURN(&#32;&quot;+1&quot;&#32;#1&#32;)&#13;&#10;&#32;&#32;&#32;&quot;1{0-1}&#32;(888[2-9]x{6})&quot;&#32;:&#32;RETURN(&#32;&quot;+1&quot;&#32;#1&#32;)&#13;&#10;&#13;&#10;MAP&#32;SurchargedNumbers&#32;=&#13;&#10;&#32;&#32;&#32;&quot;1{0-1}&#32;(900[2-9]x{6})&quot;&#32;:&#32;RETURN(&#32;&quot;+1&quot;&#32;#1&#32;)&#13;&#10;&#13;&#10;MAP&#32;KeyNumberShort&#32;=&#13;&#10;&#32;&#32;&#32;&quot;[2-9]&quot;&#32;:&#32;RETURN&#32;(&#32;#0&#32;)&#13;&#10;&#32;&#32;&#32;&quot;[^2-9]&quot;&#32;:&#32;REORDER;&#32;RETURN&#13;&#10;&#32;&#32;&#32;&quot;S&quot;&#32;:&#32;REORDER;&#32;RETURN&#13;&#10;&#13;&#10;MAP&#32;KeyNumberLong&#32;=&#13;&#10;&#32;&#32;&#32;&quot;[2-4]x&quot;&#32;:&#32;RETURN&#32;(&#32;#0&#32;)&#13;&#10;&#32;&#32;&#32;&quot;[^2-4]&quot;&#32;:&#32;REORDER;&#32;RETURN&#32;&#13;&#10;&#32;&#32;&#32;&quot;S&quot;&#32;:&#32;REORDER;&#32;RETURN&#13;&#10;&#32;&#32;&#32;&quot;[2-4]&#32;(=End)&quot;&#32;:&#32;REORDER;&#32;RETURN&#13;&#10;&#13;&#10;MAP&#32;Star&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(*)&quot;&#32;:&#32;RETURN&#13;&#10;&#13;&#10;MAP&#32;End&#32;=&#13;&#10;&#32;&#32;&#32;&quot;#&quot;&#32;:&#32;RETURN&#13;&#10;&#32;&#32;&#32;&quot;S&quot;&#32;:&#32;RETURN&#13;&#10;&#13;&#10;MAP&#32;NationalNumbers&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(x{0-25})S&quot;&#32;:&#32;RETURN&#32;(&#32;#0)&#13;&#10;&#32;&#32;&#32;&quot;(x{1-25})#&quot;&#32;:&#32;RETURN&#32;(&#32;#0)&#13;&#10;&#13;&#10;MAP&#32;CNumber&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(=NationalNumbers)&quot;&#32;:&#32;RETURN&#32;(&#32;#1v&#32;)&#13;&#10;&#13;&#10;MAP&#32;BNumber&#32;=&#13;&#10;&#32;&#32;&#32;&quot;(=NationalNumbers)&quot;&#32;:&#32;RETURN&#32;(&#32;#1v&#32;)&#13;&#10;&#13;&#10;MAP&#32;IntNumbers&#32;=&#32;&#13;&#10;&#32;&#32;&#32;&quot;#([0-9*]{1-25})S&quot;&#32;:&#32;RETURN&#32;(&#32;#1&#32;&quot;:&quot;&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#*&quot;&#32;:&#32;RETURN&#32;(&#32;&quot;*:&quot;&#32;)&#13;&#10;&#32;&#32;&#32;&quot;#([0-9*]{1-25})#&quot;&#32;:&#32;RETURN&#32;(&#32;#1&#32;&quot;:&quot;&#32;)&#13;&#10;</X_BROADCOM_COM_CCTK_DigitMap>
+          <SIP>
+            <ProxyServer>0.0.0.0</ProxyServer>
+            <RegistrarServer>0.0.0.0</RegistrarServer>
+            <X_BROADCOM_COM_MusicServer>0.0.0.0</X_BROADCOM_COM_MusicServer>
+            <UserAgentPort>5060</UserAgentPort>
+            <OutboundProxy>0.0.0.0</OutboundProxy>
+            <OutboundSecondaryProxy>0.0.0.0</OutboundSecondaryProxy>
+            <RegisterExpires>3600</RegisterExpires>
+            <RegisterRetryInterval>20</RegisterRetryInterval>
+            <DSCPMark>46</DSCPMark>
+          </SIP>
+          <RTP>
+            <LocalPortMin>40000</LocalPortMin>
+            <LocalPortMax>60000</LocalPortMax>
+            <DSCPMark>46</DSCPMark>
+            <SRTP>
+              <X_BROADCOM_COM_SrtpUsageOption>Disabled</X_BROADCOM_COM_SrtpUsageOption>
+            </SRTP>
+          </RTP>
+          <Line instance="5">
+            <Enable>Enabled</Enable>
+            <DirectoryNumber>1001</DirectoryNumber>
+            <PhyReferenceList>0</PhyReferenceList>
+            <SIP>
+              <URI>1001</URI>
+            </SIP>
+            <CallingFeatures>
+              <MaxSessions>2</MaxSessions>
+              <CallForwardUnconditionalEnable>FALSE</CallForwardUnconditionalEnable>
+              <DoNotDisturbEnable>FALSE</DoNotDisturbEnable>
+              <X_BROADCOM_COM_CallBarringEnable>FALSE</X_BROADCOM_COM_CallBarringEnable>
+            </CallingFeatures>
+            <VoiceProcessing>
+              <TransmitGain>-20</TransmitGain>
+              <ReceiveGain>-10</ReceiveGain>
+            </VoiceProcessing>
+            <Codec>
+              <List instance="1">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>3</Priority>
+              </List>
+              <List instance="2">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+              </List>
+              <List instance="3">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>2</Priority>
+              </List>
+              <List instance="4">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>4</Priority>
+              </List>
+              <List instance="5">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>5</Priority>
+              </List>
+              <List instance="6">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>6</Priority>
+              </List>
+              <List instance="7">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>12</Priority>
+              </List>
+              <List instance="8">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="9">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="10">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="11">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="12">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="13">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="14">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="15">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="16">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="17">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="18">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="19">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List nextInstance="20" ></List>
+            </Codec>
+            <X_BROADCOM_COM_DectLineSetting>
+              <LineName>
+                <Element>Line&#32;1</Element>
+              </LineName>
+            </X_BROADCOM_COM_DectLineSetting>
+          </Line>
+          <Line instance="6">
+            <Enable>Enabled</Enable>
+            <DirectoryNumber>2001</DirectoryNumber>
+            <PhyReferenceList>1</PhyReferenceList>
+            <X_BROADCOM_COM_CMAcntNum>1</X_BROADCOM_COM_CMAcntNum>
+            <SIP>
+              <URI>2001</URI>
+            </SIP>
+            <CallingFeatures>
+              <MaxSessions>2</MaxSessions>
+              <CallForwardUnconditionalEnable>FALSE</CallForwardUnconditionalEnable>
+              <DoNotDisturbEnable>FALSE</DoNotDisturbEnable>
+              <X_BROADCOM_COM_CallBarringEnable>FALSE</X_BROADCOM_COM_CallBarringEnable>
+            </CallingFeatures>
+            <VoiceProcessing>
+              <TransmitGain>-20</TransmitGain>
+              <ReceiveGain>-10</ReceiveGain>
+            </VoiceProcessing>
+            <Codec>
+              <List instance="1">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>3</Priority>
+              </List>
+              <List instance="2">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+              </List>
+              <List instance="3">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>2</Priority>
+              </List>
+              <List instance="4">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>4</Priority>
+              </List>
+              <List instance="5">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>5</Priority>
+              </List>
+              <List instance="6">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>6</Priority>
+              </List>
+              <List instance="7">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>12</Priority>
+              </List>
+              <List instance="8">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="9">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="10">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="11">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="12">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="13">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="14">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="15">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="16">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="17">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="18">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List instance="19">
+                <PacketizationPeriod>20</PacketizationPeriod>
+                <SilenceSuppression>FALSE</SilenceSuppression>
+                <Priority>13</Priority>
+              </List>
+              <List nextInstance="20" ></List>
+            </Codec>
+            <X_BROADCOM_COM_DectLineSetting>
+              <LineName>
+                <Element>Line&#32;2</Element>
+              </LineName>
+              <LineId>
+                <Element>2</Element>
+              </LineId>
+            </X_BROADCOM_COM_DectLineSetting>
+          </Line>
+          <Line nextInstance="7" ></Line>
+        </VoiceProfile>
+        <VoiceProfile nextInstance="2" ></VoiceProfile>
+        <PhyInterface instance="1">
+        </PhyInterface>
+        <PhyInterface instance="2">
+        </PhyInterface>
+        <PhyInterface nextInstance="3" ></PhyInterface>
+      </VoiceService>
+      <VoiceService nextInstance="2" ></VoiceService>
+    </Services>
+    <X_BROADCOM_COM_NetworkConfig>
+      <DNSIfName>eth4.3,ppp1.1,ppp2.1,ptm0.1,usb0</DNSIfName>
+    </X_BROADCOM_COM_NetworkConfig>
+    <X_BROADCOM_COM_IGMPCfg>
+      <IgmpBridgeIfNames>br0&#32;</IgmpBridgeIfNames>
+    </X_BROADCOM_COM_IGMPCfg>
+    <X_BROADCOM_COM_MLDCfg>
+      <MldBridgeIfNames>br0&#32;</MldBridgeIfNames>
+    </X_BROADCOM_COM_MLDCfg>
+    <X_SAGEM_COM>
+      <LanguageId>0</LanguageId>
+      <ConfigId>F3864AC_Optus_5.conf</ConfigId>
+    </X_SAGEM_COM>
+  </InternetGatewayDevice>
+</DslCpeConfig>
