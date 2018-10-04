@@ -16,9 +16,10 @@ Stick a paperclip in the `RESET` button for 5 seconds to reset the modem to fact
 
 # Earlier modem model/firmware versions
 
-For earlier models of the Optus modem e.g. the white one, and associated firmware try the passwords below.
+For earlier models and/or firmware versions of the Optus modem e.g. the white one, try the passwords below.
 
 | user | password |
 | --- | --- |
 | admin | Y3s0ptus |
+| admin | 0ptU%1M5 |
 
