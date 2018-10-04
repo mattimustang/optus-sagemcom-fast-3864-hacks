@@ -8,11 +8,13 @@ Stick a paperclip in the `RESET` button for 5 seconds to reset the modem to fact
 
 try the passwords below.
 
-| user | password |
-| --- | --- |
-| admin | Y3s0ptus |
-| admin | 0ptU%1M5 |
-| admin | 8PTu5W@C |
-| optus | optus |
+| user | password | url |
+| --- | --- | --- |
+| admin | Y3s0ptus | http://admin:Y3s0ptus@192.168.0.1/main.html |
+| admin | 0ptU%1M5 |  http://admin:0ptU%1M5@192.168.0.1/main.html |
+| admin | 8PTu5W@C | http://admin:8PTu5W%40C@192.168.0.1/main.html |
+| optus* | optus | http://optus:optus192.168.0.1/main.html |
+
+* Not an admin account
 
 
