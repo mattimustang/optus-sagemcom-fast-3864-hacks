@@ -3,8 +3,8 @@ import struct
 from Crypto.Cipher import AES
 import sys
 
-KEY = "iwp2390x-e]57kx&#@*(ca,sfkf!eu+$"
-IV = "fiw;opdd40382,*&"
+KEY = b'iwp2390x-e]57kx&#@*(ca,sfkf!eu+$'
+IV = b'fiw;opdd40382,*&'
 OUT = '%s.txt'
 
 def decrypt(settings):
