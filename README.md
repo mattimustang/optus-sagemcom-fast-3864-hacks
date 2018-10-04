@@ -13,13 +13,14 @@ depending on the firmware version your modem is running.
 
 ## Factory Default Passwords
 
-Listed below are the factory default passwords set on devices.
+Listed below are the factory default passwords set on Optus' devices.
 These get automatically changed from the defaults when you connect the device to the Internet for the first time.
-Leave the modem WAN/DSL ports disconnected if you need to access it using these passwords.
+
+Leave the modem WAN/DSL ports disconnected if you want to access the modem using these passwords.
 
 Stick a paperclip in the `RESET` button for 5 seconds to reset the modem to factory default configuration.
 
-try the passwords below.
+The passwords differ between modem models and firmware verions so try each one below until it works.
 
 | user | password | url |
 | --- | --- | --- |
