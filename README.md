@@ -28,7 +28,7 @@ try the passwords below.
 | admin | 8PTu5W@C | http://admin:8PTu5W%40C@192.168.0.1/main.html |
 | optus * | optus | http://optus:optus192.168.0.1/main.html |
 
-* Not an admin account
+\* Not an admin account
 
 ## Getting the `admin` Password Prior to Software Version 8.353.1_F@ST5350_Optus
 
