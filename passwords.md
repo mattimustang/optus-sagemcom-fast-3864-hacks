@@ -9,6 +9,7 @@ Stick a paperclip in the `RESET` button for 5 seconds to reset the modem to fact
 # Optus F@AST 3864AC NBN modem version 8.358
 
 | user | password |
+| --- | --- |
 | admin | 8PTu5W@C |
 | optus | optus |
 | support | abcd |
@@ -18,5 +19,6 @@ Stick a paperclip in the `RESET` button for 5 seconds to reset the modem to fact
 For earlier models of the Optus modem e.g. the white one, and associated firmware try the passwords below.
 
 | user | password |
+| --- | --- |
 | admin | Y3s0ptus |
 
