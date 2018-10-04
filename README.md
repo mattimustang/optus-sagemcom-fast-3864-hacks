@@ -56,7 +56,7 @@ On Windows systems will need to download and install [python 3.5](https://www.py
 
 Then open a DOS or PowerShell command shell and install the pycrypto module:
 
-    pip install --use-wheel --no-index --find-links=https://github.com/sfbahr/PyCrypto-Wheels/raw/master/pycrypto-2.6.1-cp35-none-win32.whl pycrypto
+    pip install pycryptome
 
 ### Download `decrypt-conf.py`
 
