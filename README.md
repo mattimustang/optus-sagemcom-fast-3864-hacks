@@ -11,6 +11,20 @@ you to login as the `admin` user to be able to view and modify them.
 There are a number of ways you can obtain the admin password, with some methods
 depending on the firmware version your modem is running.
 
+# Known Working Firmware Versions
+
+The techniques below only work with certain firmware versions. Browse to http://192.168.0.1/main.html?loginuser=1 and check the `Software Version` against the table below to see if it is supported. To get access for devices with unsupported firmware I will required a device running that firmware or someone to investigate and provide a fix for their firmware version. 
+
+| Software Version | Supported |
+| --- | --- |
+| before 8.353.1_F@ST5350_Optus | Yes |
+| 8.353.1_F@ST5350_Optus | Yes |
+| 8.353.21_F@ST5350_OptusBootloader | No |
+| 8.379_F@ST3864AC_Optus | No |
+| 10.33_F@ST3864V3AC_Optus | No |
+| 10.54_F@ST3864V3AC_Optus | No |
+
+
 ## Factory Default Passwords
 
 Listed below are the factory default passwords set on Optus' devices.
