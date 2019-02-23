@@ -125,6 +125,10 @@ The password is base64 encoded so to decode it copy it into the following
 command line:
 
     $ echo XXXXXXXXXXXX== | base64 -d
+    
+    OR
+    
+    $ openssl enc -base64 -d <<< XXXXXXXXXXXX
 
 ## Accessing the Advanced Settings
 
