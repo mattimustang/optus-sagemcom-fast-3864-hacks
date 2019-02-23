@@ -83,6 +83,9 @@ repository.
 Install the `decrypt-conf.py` dependencies:
 
     $ sudo pip install pycryptodome
+    
+    Python 3.X
+    $ sudo pip install pycrpto
 
 ### Set up Windows
 
@@ -92,6 +95,7 @@ Then open a DOS or PowerShell command shell and install the pycrypto module:
 
     pip install pycryptodome
     
+    Python 3.x
     pip install pycrypto
 
 ### Download `decrypt-conf.py`
