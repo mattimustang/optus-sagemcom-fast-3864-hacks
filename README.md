@@ -21,7 +21,7 @@ The techniques below only work with certain firmware versions. Browse to http://
 | 8.353.1_F@ST5350_Optus | Yes |
 | 8.353.21_F@ST5350_OptusBootloader | No |
 | 8.379_F@ST3864AC_Optus | No |
-| 10.33_F@ST3864V3AC_Optus | No |
+| 10.33_F@ST3864V3AC_Optus | Yes |
 | 10.54_F@ST3864V3AC_Optus | No |
 
 
@@ -91,6 +91,8 @@ On Windows systems will need to download and install [python 3.5](https://www.py
 Then open a DOS or PowerShell command shell and install the pycrypto module:
 
     pip install pycryptodome
+    
+    pip install pycrypto
 
 ### Download `decrypt-conf.py`
 
