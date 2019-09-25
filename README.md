@@ -1,6 +1,11 @@
+# Notes
+This fork is essentially me trying to make this project more up to date. I haven't done much yet but I'll get there.
+
+## Optus has patched out the ability to upload unencrypted configuration files, so the only way to upload them is if you re-encrypt them. Apparently the IV and the Key has also changed, which means that the decryption tool now doesn't work on newer firmwares, I'll try and look into that, as the last update to the original git was 7 months ago.
+
 # Overview
 
-This repository is a collection of tools and tips for the Optus Sagemcom
+This repository is a FORKED UPDATED collection of tools and tips for the Optus Sagemcom
 F@ST 3864 broadband modem.
 
 # Getting Access to Advanced Configuration Options
@@ -36,12 +41,12 @@ Stick a paperclip in the `RESET` button for 5 seconds to reset the modem to fact
 
 The passwords differ between modem models and firmware verions so try each one below until it works.
 
-| user | password | url |
-| --- | --- | --- |
-| admin | Y3s0ptus | http://admin:Y3s0ptus@192.168.0.1/main.html |
-| admin | 0ptU%1M5 |  http://admin:0ptU%1M5@192.168.0.1/main.html |
-| admin | 8PTu5W@C | http://admin:8PTu5W%40C@192.168.0.1/main.html |
-| optus * | optus | http://optus:optus@192.168.0.1/main.html |
+| user | password | url | status |
+| --- | --- | --- | --- |
+| admin | Y3s0ptus | http://admin:Y3s0ptus@192.168.0.1/main.html | Old patched out password. |
+| admin | 0ptU%1M5 |  http://admin:0ptU%1M5@192.168.0.1/main.html | untested |
+| admin | 8PTu5W@C | http://admin:8PTu5W%40C@192.168.0.1/main.html | CONFIRMED WORKING ON LATEST F@ST 3864v1 FIRMWARE|
+| optus * | optus | http://optus:optus@192.168.0.1/main.html | untested |
 
 \* Not an admin account
 
@@ -78,6 +83,7 @@ Open a web browser to `http://192.168.0.1` and navigate to Managment
 Next download a copy the the decrypt-conf.py script included in this
 repository.
 
+NOTE: If you already have the admin password, you can dump the config through this script: http://192.168.0.1/dumpcfgdynamic.cmd 
 ### Set up Linux
 
 Install the `decrypt-conf.py` dependencies:
@@ -208,3 +214,4 @@ on a similar device](https://community.plus.net/t5/Tech-Help-Software-Hardware-e
 - [Optus NBN - router admin access, using a BYO router with VOIP](http://forums.whirlpool.net.au/archive/2238007)
 - [Sagemcom F@ST 3864 V2 - Get Admin Password](https://www.exploit-db.com/exploits/37801/)
 - [Frank's Hacks](http://frankhacks.blogspot.com.au/2016/03/fst3864.html)
+- [Thank's to Paul 88888 on Whirlpool for finding the dumpcfgdynamic.cmd to view config without decrypting every time.](https://whrl.pl/ReiHOn)
