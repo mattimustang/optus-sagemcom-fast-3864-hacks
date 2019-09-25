@@ -1,12 +1,10 @@
-# Notes
-This fork is essentially me trying to make this project more up to date. I haven't done much yet but I'll get there.
-
-## Optus has patched out the ability to upload unencrypted configuration files, so the only way to upload them is if you re-encrypt them. Apparently the IV and the Key has also changed, which means that the decryption tool now doesn't work on newer firmwares, I'll try and look into that, as the last update to the original git was 7 months ago.
 
 # Overview
 
-This repository is a FORKED UPDATED collection of tools and tips for the Optus Sagemcom
+This repository is a collection of tools and tips for the Optus Sagemcom
 F@ST 3864 broadband modem.
+
+## NOTE: Optus has patched out the ability to upload unencrypted configuration files, so the only way to upload them is if you re-encrypt them. Apparently the IV and the Key has also changed, which means that the decryption tool now doesn't work on newer firmwares.
 
 # Getting Access to Advanced Configuration Options
 
