@@ -83,7 +83,10 @@ repository.
 
 NOTE: If you already have the admin password, you can dump the config through this script: http://192.168.0.1/dumpcfgdynamic.cmd 
 ### Set up Linux
+Install pip if you haven't already:
 
+    $ sudo apt install python3-pip
+    
 Install the `decrypt-conf.py` dependencies:
 
     $ sudo pip install pycryptodome
