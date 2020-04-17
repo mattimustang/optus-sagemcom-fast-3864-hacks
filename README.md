@@ -44,9 +44,6 @@ The passwords differ between modem models and firmware verions so try each one b
 | admin | Y3s0ptus | http://admin:Y3s0ptus@192.168.0.1/main.html | Old patched out password. |
 | admin | 0ptU%1M5 |  http://admin:0ptU%1M5@192.168.0.1/main.html | untested |
 | admin | 8PTu5W@C | http://admin:8PTu5W%40C@192.168.0.1/main.html | CONFIRMED WORKING ON LATEST F@ST 3864v1 FIRMWARE|
-| optus * | optus | http://optus:optus@192.168.0.1/main.html | untested |
-
-\* Not an admin account
 
 ## Getting the `admin` Password Prior to Software Version 8.353.1_F@ST5350_Optus
 
